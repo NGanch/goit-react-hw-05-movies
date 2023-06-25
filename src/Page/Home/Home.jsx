@@ -49,43 +49,4 @@ export function Home() {
   );
 }
 // //=====================================================================
-// export function Home() {
-//   const location = useLocation();
-//   const [popular, setPopular] = useState([]);
 
-//   //===================================
-
-//   useEffect(() => {
-//     async function getImage() {
-//       const response = await fetchTrendingMovies();
-//       console.log(response);
-//       const { results } = response;
-//       if (!results.length) {
-//         return;
-//       }
-//       setPopular([...results]);
-//     }
-//     getImage();
-//   }, []);
-
-//   return (
-//     <HomeMain>
-//       <HomeTitle>Trending today</HomeTitle>
-//       <HomeList>
-//         {popular.map(({ id, name, poster_path }) => {
-//           return (
-//             <HomeItem key={id}>
-//                <StyledLink to={`${id}`} state={{ from: location}}>
-//               <IMG
-//                 src={`https://image.tmdb.org/t/p/w500${poster_path}`}
-//                 alt={name}
-//               />
-//              <MovieP>{name}</MovieP>
-//              </StyledLink>
-//             </HomeItem>
-//           );
-//         })}
-//       </HomeList>
-//     </HomeMain>
-//   );
-// }

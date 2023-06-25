@@ -36,41 +36,4 @@ export function Cast() {
 }
 //=============================================
 
-// export function Cast() {
-//   const [cast, setCast] = useState([]);
 
-//   //       //===================================
-
-//   const { movieId } = useParams();
-
-//   useEffect(() => {
-//     async function getDetails() {
-//       const response = await fetchInfoCast(movieId);
-//       console.log(response.cast);
-//       setCast([...response.cast]);
-//     }
-//     getDetails();
-//   }, [movieId]);
-
-//   return (
-//     <CastList>
-//       {cast.map(({ id, original_name, profile_path, character }) => {
-//         return (
-//           <CastItem key={id}>
-//             {profile_path ? (
-//               <IMG
-//                 src={`https://image.tmdb.org/t/p/w500${profile_path}`}
-//                 alt={original_name}
-//               />
-//             ) : (
-//               <IMG src="https://i.pinimg.com/236x/be/0b/c9/be0bc94db984f5329afef2e0dacb8d55.jpg" />
-//             )}
-
-//             <CastTitle>{original_name}</CastTitle>
-//             <CastP>Character: {character}</CastP>
-//           </CastItem>
-//         );
-//       })}
-//     </CastList>
-//   );
-// }

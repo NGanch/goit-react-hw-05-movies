@@ -31,31 +31,4 @@ export function Reviews() {
   );
 }
 //=============================================
-// export function Reviews() {
-//   const [cast, setCast] = useState([]);
 
-//   //       //===================================
-
-//   const { movieId } = useParams();
-
-//   useEffect(() => {
-//     async function getDetails() {
-//       const response = await fetchInfoReviews(movieId);
-//       setCast([...response.results]);
-//     }
-//     getDetails();
-//   }, [movieId]);
-
-//   return (
-//     <ReviewsList>
-//       {cast.map(({ id, author, content }) => {
-//         return (
-//           <ReviewsItem key={id}>
-//             <ReviewsTitle>Author: {author}</ReviewsTitle>
-//             <ReviewsP>{content}</ReviewsP>
-//           </ReviewsItem>
-//         );
-//       })}
-//     </ReviewsList>
-//   );
-// }
