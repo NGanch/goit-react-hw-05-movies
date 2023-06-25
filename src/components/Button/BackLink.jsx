@@ -1,14 +1,12 @@
+import { HiArrowLeft } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
+import styled from '@emotion/styled';
 
-
-import { HiArrowLeft } from "react-icons/hi";
-import { Link } from "react-router-dom";
-// import styled from "styled-components";
-import styled from "@emotion/styled";
 const StyledLink = styled(Link)`
-display: flex;
-align-items: center;
-gap: 4px;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
   padding: 15px 30px;
   width: 200px;
   margin: 16px;
@@ -27,9 +25,6 @@ justify-content: center;
     color: orangered;
   }
 `;
-
-
-
 
 export const BackLink = ({ to, children }) => {
   return (

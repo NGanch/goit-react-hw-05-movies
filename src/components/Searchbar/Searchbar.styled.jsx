@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 export const Header = styled.header`
   background-color: black;
   height: 70px;
-
 `;
 
 export const SearchFormStyled = styled.form`
@@ -23,16 +22,10 @@ export const InputSearch = styled.input`
   background-color: transparent;
   outline: none;
   margin-top: 5px;
-  font-size: 15px;
-  font-weight: 400;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
   letter-spacing: 0.03em;
-  &::placeholder {
-    font-weight: 200;
-    color: white;
-  }
-  &::textarea {
-    color: white;
-  }
 `;
 
 export const FormBtn = styled.button`

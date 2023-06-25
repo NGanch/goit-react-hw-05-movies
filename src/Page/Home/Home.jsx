@@ -30,15 +30,15 @@ export function Home() {
       <HomeTitle>Trending today</HomeTitle>
       {popular.length > 0 && (
         <HomeList>
-          {popular.map(({ id, name, poster_path }) => {
+          {popular.map(({ id, title, original_title, poster_path }) => {
             return (
               <HomeItem key={id}>
                 <StyledLink to={`${routes.Movies}/${id}`} state={{ from: location }}>
                   <IMG
                     src={`https://image.tmdb.org/t/p/w500${poster_path}`}
-                    alt={name}
+                    alt={title}
                   />
-                  <MovieP>{name}</MovieP>
+                  <MovieP>{title}</MovieP>
                 </StyledLink>
               </HomeItem>
             );

@@ -10,8 +10,8 @@ export const useFetchHomeMuvies = () => {
     const fetchData = async () => {
       try {
         setIsLoading(true);
-
         const fetchedCountries = await fetchPopularMovies();
+        console.log(fetchedCountries)
         setPopular(fetchedCountries);
       } catch (error) {
         setError(error.message);

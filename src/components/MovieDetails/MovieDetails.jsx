@@ -63,7 +63,7 @@ export function MovieDetails() {
                   {original_title} ({release_date})
                 </TitleDetail>
                 <UserScore>
-                  User Score<Span>{popularity}</Span>
+                  User Score:<Span> {popularity}</Span>
                 </UserScore>
                 <TitleOverview>Overview</TitleOverview>
                 <POverview>{overview}</POverview>
