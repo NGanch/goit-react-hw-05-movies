@@ -9,8 +9,6 @@ import {
   MovieP,
 } from '../MovieList/MovieList.styled';
 
-
-
 export const MovieList = ({ movie }) => {
   const location = useLocation();
   return (
