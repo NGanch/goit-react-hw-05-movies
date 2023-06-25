@@ -12,6 +12,7 @@ import {
 } from '../Home/Home.styled';
 import { useFetchHomeMuvies } from 'hooks/useFetchHomeMuvies';
 import { toast } from 'react-toastify';
+import { routes } from 'routes';
 //=====================================================================
 
 export function Home() {
@@ -32,7 +33,7 @@ export function Home() {
           {popular.map(({ id, name, poster_path }) => {
             return (
               <HomeItem key={id}>
-                <StyledLink to={`${id}`} state={{ from: location }}>
+                <StyledLink to={`${routes.Movies}/${id}`} state={{ from: location }}>
                   <IMG
                     src={`https://image.tmdb.org/t/p/w500${poster_path}`}
                     alt={name}

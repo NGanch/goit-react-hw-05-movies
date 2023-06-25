@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
 
 import { Outlet } from 'react-router-dom';
-import { Button } from '../../Page/Button/Button';
+import { Button } from '../Button/Button';
 import {
   MainDetails,
   Container,

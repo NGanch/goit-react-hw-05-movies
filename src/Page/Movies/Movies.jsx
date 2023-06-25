@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
-import { BackLink } from '../../Page/Button/BackLink';
+import { BackLink } from '../../components/Button/BackLink';
 import { Searchbar } from '../../components/Searchbar/Searchbar';
 import { MovieList } from '../../components/MovieList/MovieList';
 import { Loader } from '../../components/Loader/Loader';
