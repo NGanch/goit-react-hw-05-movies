@@ -9,7 +9,7 @@ import { Loader } from '../../components/Loader/Loader';
 import { MovieMain } from '../../components/MovieList/MovieList.styled';
 import { routes } from 'routes';
 import { useFetchMovies } from 'hooks/useFetchMoviesbyName';
-
+// import { Navigate } from "react-router-dom";
 //================================================================================================
 const Movies = () => {
   const location = useLocation();
@@ -21,6 +21,9 @@ const Movies = () => {
     <MovieMain>
       {isLoading && <Loader />}
       {/* {error && <p style={{color: 'white'}}>Sorry. There are no muvies ... 😭</p>} */}
+  {/* {  isLoginSuccess &&
+         <Navigate to={routes.HOME} replace />
+        } */}
       {error &&
         toast.error('Sorry. There are no muvies ... 😭', {
           position: 'top-center',
