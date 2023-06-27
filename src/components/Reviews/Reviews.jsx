@@ -8,7 +8,7 @@ import { useFetchReviews } from 'hooks/useFetchReviews';
 import { Loader } from '../Loader/Loader';
 import { toast } from 'react-toastify';
 //=============================================
-export function Reviews() {
+const Reviews =() => {
   const { reviews, isLoading, error } = useFetchReviews();
   return (
     <ReviewsList>
@@ -30,5 +30,6 @@ export function Reviews() {
     </ReviewsList>
   );
 }
+export default Reviews;
 //=============================================
 

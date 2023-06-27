@@ -3,7 +3,7 @@ import { useFetchCast } from 'hooks/useFetchCast';
 import { Loader } from '../Loader/Loader';
 import { toast } from 'react-toastify';
 //=============================================
-export function Cast() {
+const Cast = () =>{
   const { cast, isLoading, error } = useFetchCast();
   return (
     <CastList>
@@ -34,6 +34,7 @@ export function Cast() {
     </CastList>
   );
 }
+export default Cast;
 //=============================================
 
 

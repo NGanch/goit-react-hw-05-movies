@@ -11,7 +11,7 @@ import { routes } from 'routes';
 import { useFetchMovies } from 'hooks/useFetchMoviesbyName';
 
 //================================================================================================
-export function Movies() {
+const Movies = () => {
   const location = useLocation();
   const { movie, isLoading, error, handleChange } = useFetchMovies();
 
@@ -34,6 +34,7 @@ export function Movies() {
     </MovieMain>
   );
 }
+export default Movies;
 // //=====================================================================
 //   const [query, setQuery] = useState('batman');
 

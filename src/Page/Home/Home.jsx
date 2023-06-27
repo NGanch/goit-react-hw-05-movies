@@ -15,7 +15,8 @@ import { toast } from 'react-toastify';
 import { routes } from 'routes';
 //=====================================================================
 
-export function Home() {
+
+ const Home = () => {
   const location = useLocation();
   const { popular, isLoading, error } = useFetchHomeMuvies();
 
@@ -48,5 +49,6 @@ export function Home() {
     </HomeMain>
   );
 }
+export default Home;
 // //=====================================================================
 

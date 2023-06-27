@@ -28,7 +28,7 @@ import { toast } from 'react-toastify';
 import { routes } from 'routes';
 //=============================================
 
-export function MovieDetails() {
+const MovieDetails =() => {
   const { details, isLoading, error } = useFetchDetails();
 
   const location = useLocation();
@@ -81,14 +81,15 @@ export function MovieDetails() {
 
       <LinkList>
         <CastItem>
-          <CastLink to="cast">Cast</CastLink>
+          <CastLink to="cast" state={{ from: location }}>Cast</CastLink>
         </CastItem>
         <ReviewsItem>
-          <ReviewsLink to="reviews">Reviews</ReviewsLink>
+          <ReviewsLink to="reviews" state={{ from: location }}>Reviews</ReviewsLink>
         </ReviewsItem>
       </LinkList>
       <Outlet />
     </MainDetails>
   );
 }
+export default MovieDetails;
 //=============================================
